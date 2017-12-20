@@ -1,0 +1,41 @@
+extends: 'eslint:recommended'
+
+parserOptions:
+  ecmaVersion: 8
+
+env:
+  node: true
+  mocha: true
+
+globals:
+  Promise: true
+  log: true
+  Model: true
+  Listener: true
+  Message: true
+
+rules:
+  comma-style: error
+  consistent-this:
+    - error
+    - _this
+  indent:
+    - error
+    - 2
+    - SwitchCase: 1
+      VariableDeclarator: 2
+  keyword-spacing: error
+  no-console: error
+  no-multi-spaces: off
+  no-spaced-func: error
+  no-trailing-spaces: error
+  quotes:
+    - error
+    - single
+  semi: off
+  space-before-blocks: error
+  space-before-function-paren:
+    - error
+    - never
+  space-infix-ops: error
+  space-unary-ops: error

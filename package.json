@@ -1,0 +1,40 @@
+{
+  "name": "@slatestudio/dyno-specs",
+  "description": "Node swagger specs builder library",
+  "tags": [
+    "node",
+    "redis"
+  ],
+  "version": "0.0.1",
+  "author": "Alexander Kravets <alex@slatestudio.com>",
+  "contributors": [
+    {
+      "name": "Sergey Oprya",
+      "email": "sergey@slatestudio.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/slate-studio/dyno-specs.git"
+  },
+  "bugs": {
+    "url": "http://github.com/slate-studio/dyno-specs/issues"
+  },
+  "engines": [
+    "node >= 8.0"
+  ],
+  "main": "./index",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  },
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "istanbul": "git+https://github.com/slate-studio/istanbul.git",
+    "mocha": "^4.0.0"
+  },
+  "license": "ISC",
+  "scripts": {
+    "mocha": "istanbul cover _mocha",
+    "test": "NODE_ENV=test npm run mocha"
+  }
+}
